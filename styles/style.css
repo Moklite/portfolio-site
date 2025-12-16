@@ -30,7 +30,10 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--font-heading);
     font-weight: 700;
     line-height: 1.2;
@@ -86,7 +89,8 @@ ul {
 }
 
 /* Buttons */
-.btn-primary, .btn-secondary {
+.btn-primary,
+.btn-secondary {
     display: inline-block;
     padding: 0.8rem 2rem;
     border-radius: 50px;
@@ -152,12 +156,25 @@ ul {
     color: var(--text-secondary);
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover,
+.nav-links a.active {
     color: var(--text-primary);
 }
 
 .nav-links .btn-primary {
-    padding: 0.5rem 1.5rem;
+    padding: 0.6rem 1.8rem;
+    background: white;
+    color: var(--bg-color);
+    /* Dark text for contrast */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    border: none;
+}
+
+.nav-links .btn-primary:hover {
+    background: #f0f0f0;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+    color: var(--bg-color);
 }
 
 /* Hero Section */
@@ -260,9 +277,17 @@ ul {
     border-radius: 50%;
 }
 
-.red { background: #ff5f56; }
-.yellow { background: #ffbd2e; }
-.green { background: #27c93f; }
+.red {
+    background: #ff5f56;
+}
+
+.yellow {
+    background: #ffbd2e;
+}
+
+.green {
+    background: #27c93f;
+}
 
 pre {
     font-family: 'Fira Code', monospace;
@@ -528,7 +553,8 @@ footer {
         text-align: left;
     }
 
-    .timeline-item:nth-child(odd), .timeline-item:nth-child(even) {
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
         left: 0;
         text-align: left;
         padding-left: 2rem;
@@ -540,14 +566,15 @@ footer {
     }
 
     .nav-links {
-        display: none; /* Mobile menu to be implemented with JS */
+        display: none;
+        /* Mobile menu to be implemented with JS */
     }
-    
+
     .hamburger {
         display: block;
         cursor: pointer;
     }
-    
+
     .hamburger span {
         display: block;
         width: 25px;
